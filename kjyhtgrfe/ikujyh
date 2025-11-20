@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="navbar.css">
+  <title>CarsvTechnical Documentation</title>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <header>Cars Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Basics">Basics</a>
+    <a class="nav-link" href="#Car_Types">#Car Types</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Advanced_Cars">Advanced Cars</a>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Cars are one of the most important machines in modern life, helping people travel long distances quickly and comfortably.</p>
+      <p>Understanding how cars work makes it easier to maintain your car you can possibly understan or fix small things in your car. </p>
+      <p>Regular car knowledge can save you money from repairs and help you detect the issue</p>
+      <ul>
+        <li>What is car use for?</li>
+        <li>Why understanding basic car knowledge is immportant?</li>
+      </ul>
+    </section>
+
+   
