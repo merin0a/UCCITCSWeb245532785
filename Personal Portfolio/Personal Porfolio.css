@@ -1,0 +1,74 @@
+/* NAVBAR fixed to top */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    z-index: 10;
+  }
+  
+  #navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Full-screen welcome section */
+  #welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#8fd3fe, #ffffff);
+    padding-top: 60px; /* protects from navbar overlap */
+  }
+  
+  #welcome-section h1 {
+    font-size: 3rem;
+  }
+  
+  /* Projects section */
+  #projects {
+    padding: 100px 20px;
+    background: #ffffff;
+  }
+  
+  .project-tile {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+  }
+
+  .project-tile{
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+  }
+  
+  .project-tile a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* MEDIA QUERY — required by FCC */
+  @media (max-width: 600px) {
+    #navbar a {
+      font-size: 16px;
+    }
+  
+    #welcome-section h1 {
+      font-size: 2rem;
+    }
+  }
+  
