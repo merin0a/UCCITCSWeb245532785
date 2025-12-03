@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#8fd3fe, #ffffff);
+    background: linear-gradient(#D4AF37, #8FD3FE);
     padding-top: 60px; /* protects from navbar overlap */
   }
   
