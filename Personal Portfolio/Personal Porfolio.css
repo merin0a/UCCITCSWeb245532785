@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8; /* light background for the site */
-  color: #222; /* default text color */
+  background-color: #f0f4f8;
+  color: #222;
 }
 
 /* NAVBAR fixed to top */
@@ -13,7 +13,7 @@ body {
   left: 0;
   width: 100%;
   padding: 15px;
-  background: #2c3e50; /* dark blue/navy */
+  background: #2c3e50;
   display: flex;
   justify-content: center;
   gap: 25px;
@@ -21,29 +21,28 @@ body {
 }
 
 #navbar a {
-  color: #ecf0f1; /* light text */
+  color: #ecf0f1;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
 }
 
 #navbar a:hover {
-  color: #1abc9c; /* teal highlight on hover */
+  color: #1abc9c;
 }
 
 /* Full-screen welcome section */
 #welcome-section {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #5DADE2, #7DDAC6); /* blue-teal gradient */
-  color: #fff; /* white text */
-  padding-top: 60px; /* prevents navbar overlap */
+  background: linear-gradient(135deg, #5DADE2, #e9eded);
+  color: #fff;
+  padding-top: 60px;
   text-align: center;
-  outline: 10px, solid, black;
   font-family: cursive;
-  font-size: 3rem;
   margin: 0;
 }
 
@@ -53,26 +52,48 @@ body {
 }
 
 #welcome-section, #projects {
-  scroll-margin-top: 60px; /* same as navbar height */
+  scroll-margin-top: 60px;
+}
+
+.profile-pic {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 /* MEDIA QUERY — responsive */
 @media (max-width: 600px) {
   #navbar a {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   #welcome-section h1 {
-      font-size: 2rem;
+    font-size: 2rem;
+  }
+
+  .github-grid, .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 .project-tile {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin: 20px;
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -85,4 +106,63 @@ body {
 .project-tile a {
   text-decoration: none;
   color: #2c3e50;
+}
+
+#projects h2 {
+  text-align: center;  
+  font-size: 2rem;   
+  margin-bottom: 30px; 
+  color: #2c3e50;
+  font-family: cursive;
+}
+
+/* GitHub section */
+#github {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ecf0f1;
+}
+
+.github-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.github-tile {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.github-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.github-tile a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.github-tile p {
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+#github h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-family: cursive;
 }
