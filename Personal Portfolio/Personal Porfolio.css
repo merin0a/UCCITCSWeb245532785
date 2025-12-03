@@ -1,4 +1,3 @@
-/* Global body styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,11 +5,10 @@ body {
   color: #222;
 }
 
-/* NAVBAR fixed to top */
 #navbar {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100;
   width: 100%;
   padding: 15px;
   background: #2c3e50;
@@ -31,7 +29,6 @@ body {
   color: #1abc9c;
 }
 
-/* Full-screen welcome section */
 #welcome-section {
   height: 100vh;
   display: flex;
@@ -65,7 +62,6 @@ body {
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-/* MEDIA QUERY — responsive */
 @media (max-width: 600px) {
   #navbar a {
     font-size: 16px;
@@ -80,7 +76,6 @@ body {
   }
 }
 
-/* Projects grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -116,7 +111,6 @@ body {
   font-family: cursive;
 }
 
-/* GitHub section */
 #github {
   text-align: center;
   padding: 80px 20px;
@@ -130,7 +124,7 @@ body {
 }
 
 .github-tile {
-   width: 100%;    
+  width: 100%;    
   max-width: 700px; 
   background-color: #fff;
   border-radius: 12px;
