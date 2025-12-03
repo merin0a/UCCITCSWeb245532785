@@ -124,15 +124,14 @@ body {
 }
 
 .github-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+  display: flex;  
+  justify-content: center;
   padding: 20px;
 }
 
 .github-tile {
+   width: 100%;    
+  max-width: 700px; 
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
