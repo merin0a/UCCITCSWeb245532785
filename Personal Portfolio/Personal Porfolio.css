@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 25px;
-  z-index: 10;
+  z-index: 100;
 }
 
 #navbar a {
@@ -42,8 +42,8 @@ body {
   text-align: center;
   font-family: cursive;
   margin: 0;
-  position: inherit;
-  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 #welcome-section h1 {
@@ -63,6 +63,11 @@ body {
   margin-bottom: 20px;
   border: 5px solid white;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 5;
+}
+.profile-pic,
+#welcome-section h1 {
   position: relative;
   z-index: 5;
 }
@@ -176,13 +181,8 @@ body {
   animation: float 25s linear infinite;
   z-index: 0;
 }
-.cloud.behind{
-  z-index: 0;
-}
-.cloud.front{
-  z-index: 10;
-}
 
+/* Extra cloud puffs */
 .cloud::before,
 .cloud::after {
   content: '';
@@ -203,6 +203,7 @@ body {
 }
 
 .cloud1  { top: 20%; left: -250px; animation-duration: 35s; animation-delay: 0s; }
+<<<<<<< HEAD
 .cloud2  { top: 15%; left: -300px; animation-duration: 45s; animation-delay: 3s; }
 .cloud3  { top: 60%; left: -280px; animation-duration: 26; animation-delay: 5s; }
 .cloud4  { top: 65%; left: -330px; animation-duration: 35; animation-delay: 10s; }
@@ -210,6 +211,16 @@ body {
 .cloud6  { top: 67%; left: -310px; animation-duration: 20; animation-delay: 17s; }
 .cloud7  { top: 25%; left: -290px; animation-duration: 50s; animation-delay: 20s; }
 
+=======
+.cloud2  { top: 40%; left: -300px; animation-duration: 45s; animation-delay: 3s; }
+.cloud3  { top: 60%; left: -280px; animation-duration: 40s; animation-delay: 5s; }
+.cloud4  { top: 30%; left: -330px; animation-duration: 50s; animation-delay: 10s; }
+.cloud5  { top: 50%; left: -260px; animation-duration: 55s; animation-delay: 14s; }
+.cloud6  { top: 10%; left: -310px; animation-duration: 48s; animation-delay: 17s; }
+.cloud7  { top: 25%; left: -290px; animation-duration: 50s; animation-delay: 20s; }
+
+
+>>>>>>> 1364d463aa16ec1ff6ec1b1a921c13233dc02501
 @keyframes float {
   0%   { transform: translateX(0); }
   100% { transform: translateX(140vw); }
