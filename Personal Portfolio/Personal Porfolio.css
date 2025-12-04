@@ -203,15 +203,6 @@ body {
 }
 
 .cloud1  { top: 20%; left: -250px; animation-duration: 35s; animation-delay: 0s; }
-<<<<<<< HEAD
-.cloud2  { top: 15%; left: -300px; animation-duration: 45s; animation-delay: 3s; }
-.cloud3  { top: 60%; left: -280px; animation-duration: 26; animation-delay: 5s; }
-.cloud4  { top: 65%; left: -330px; animation-duration: 35; animation-delay: 10s; }
-.cloud5  { top: 50%; left: -260px; animation-duration: 55s; animation-delay: 14s; }
-.cloud6  { top: 67%; left: -310px; animation-duration: 20; animation-delay: 17s; }
-.cloud7  { top: 25%; left: -290px; animation-duration: 50s; animation-delay: 20s; }
-
-=======
 .cloud2  { top: 40%; left: -300px; animation-duration: 45s; animation-delay: 3s; }
 .cloud3  { top: 60%; left: -280px; animation-duration: 40s; animation-delay: 5s; }
 .cloud4  { top: 30%; left: -330px; animation-duration: 50s; animation-delay: 10s; }
@@ -220,7 +211,6 @@ body {
 .cloud7  { top: 25%; left: -290px; animation-duration: 50s; animation-delay: 20s; }
 
 
->>>>>>> 1364d463aa16ec1ff6ec1b1a921c13233dc02501
 @keyframes float {
   0%   { transform: translateX(0); }
   100% { transform: translateX(140vw); }
