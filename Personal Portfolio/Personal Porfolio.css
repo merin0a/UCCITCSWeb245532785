@@ -42,6 +42,8 @@ body {
   text-align: center;
   font-family: cursive;
   margin: 0;
+  position: inherit;
+  z-index: 1;
 }
 
 #welcome-section h1 {
@@ -61,6 +63,8 @@ body {
   margin-bottom: 20px;
   border: 5px solid white;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 600px) {
@@ -159,4 +163,54 @@ body {
   margin-bottom: 20px;
   color: #2c3e50;
   font-family: cursive;
+}
+
+.cloud {
+  position: absolute;
+  background: #fff;
+  width: 300px;
+  height: 70px;
+  border-radius: 50px;
+  filter: blur(1px);
+  opacity: 0.8;
+  animation: float 25s linear infinite;
+  z-index: 0;
+}
+.cloud.behind{
+  z-index: 0;
+}
+.cloud.front{
+  z-index: 10;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 160px;
+  height: 90px;
+  border-radius: 50%;
+  top: -25px;
+}
+
+.cloud::before {
+  left: 20px;
+}
+
+.cloud::after {
+  right: 20px;
+}
+
+.cloud1  { top: 20%; left: -250px; animation-duration: 35s; animation-delay: 0s; }
+.cloud2  { top: 15%; left: -300px; animation-duration: 45s; animation-delay: 3s; }
+.cloud3  { top: 60%; left: -280px; animation-duration: 26; animation-delay: 5s; }
+.cloud4  { top: 65%; left: -330px; animation-duration: 35; animation-delay: 10s; }
+.cloud5  { top: 50%; left: -260px; animation-duration: 55s; animation-delay: 14s; }
+.cloud6  { top: 67%; left: -310px; animation-duration: 20; animation-delay: 17s; }
+.cloud7  { top: 25%; left: -290px; animation-duration: 50s; animation-delay: 20s; }
+
+@keyframes float {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(140vw); }
 }
